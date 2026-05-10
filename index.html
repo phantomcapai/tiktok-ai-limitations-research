@@ -969,6 +969,8 @@ That's not a bug. That's the design.</div>
     const full = tweets.map((t, i) => `${i+1}/${tweets.length}\n\n${t}`).join('\n\n---\n\n');
     navigator.clipboard.writeText(full).then(() => showToast('Full thread copied!'));
   }
+  // Default to article view
+  showView('article');
 </script>
 </body>
 </html>
